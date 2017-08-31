@@ -92,7 +92,7 @@
 ```
 
 ## 话题列表
-- 接口名: topic/lists
+- 接口名: topic/topiclist
 - 请求参数
 ```
 {
@@ -135,7 +135,7 @@
 ```
 
 ## 话题回复列表
-- 接口名: topic/follow_list
+- 接口名: topic/followlist
 - 请求参数
 ```
 {
@@ -170,7 +170,7 @@
 ```
 
 ## 话题点赞列表
-- 接口名 topic/agree_list
+- 接口名 topic/agreelist
 - 请求参数
 ```
 {
