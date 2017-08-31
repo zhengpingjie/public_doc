@@ -1,6 +1,6 @@
 # 接口列表
 ## 1. 发起话题
-- 接口名: topic/add
+- 接口名: note/add
 - 请求参数
 ```
 {
@@ -40,12 +40,12 @@
 ```
 
 ## 2. 回复
-- 接口名: topic/follow
+- 接口名: note/follow
 - 请求参数
 ```
 {
     user_id: 回复人
-    topic_id: 话题ID
+    note_id: 话题ID
     follow_id: 0
     content: 回复内容
     notice: {} //
@@ -59,7 +59,7 @@
     data: {
         id: 
         user_id: 回复人
-        topic_id: 话题ID
+        note_id: 话题ID
         follow_id: 回复ID
         notice: {}
         status: 状态
@@ -69,12 +69,12 @@
 ```
 
 ## 3. 点赞
-- 接口名: topic/agree
+- 接口名: note/agree
 - 请求参数
 ```
 {
     user_id: 点赞人
-    topic_id: 话题ID
+    note_id: 话题ID
 }
 ```
 - 返回参数
@@ -85,14 +85,14 @@
     data: {
         id: 
         user_id: 点赞人
-        topic_id: 话题ID
+        note_id: 话题ID
         add_time: 点赞时间
     }
 }
 ```
 
 ## 4. 话题列表
-- 接口名: topic/topiclist
+- 接口名: note/notelist
 - 请求参数
 ```
 {
@@ -135,11 +135,11 @@
 ```
 
 ## 5. 话题回复列表
-- 接口名: topic/followlist
+- 接口名: note/followlist
 - 请求参数
 ```
 {
-    topic_id: 话题ID
+    note_id: 话题ID
     page: 页码
     limit: 每页数量
 }
@@ -157,7 +157,7 @@
                 id: 
                 user_id: 回复人
                 user_name: 昵称
-                topic_id: 话题ID
+                note_id: 话题ID
                 follow_id: 0
                 notice: {}
                 status: 状态
@@ -170,11 +170,11 @@
 ```
 
 ## 6. 话题点赞列表
-- 接口名 topic/agreelist
+- 接口名 note/agreelist
 - 请求参数
 ```
 {
-    topic_id: 话题ID
+    note_id: 话题ID
     page: 页码
     limit: 每页数量
 }
@@ -192,7 +192,7 @@
                 id: 
                 user_id: 点赞人
                 user_name: 昵称
-                topic_id: 话题ID
+                note_id: 话题ID
                 add_time: 点赞时间
             }
             ...
@@ -203,7 +203,7 @@
 
 # 数据表结构
 
-## 话题表[topic]
+## 话题表[note]
 
 | KEY          | TYPE         | DEFAULT | COMMENT    |
 | ------------ | ------------ | ------- | ---------- |
@@ -225,7 +225,7 @@
 | --------- | ------------ | ------- | ------- |
 | id        | int          |         | 主键      |
 | user_id   | int(10)      |         | 回复人     |
-| topic_id  | int(10)      |         | 话题ID    |
+| note_id  | int(10)      |         | 话题ID    |
 | follow_id | int(10)      | 0       | 回复ID    |
 | notice    | varchat(100) |         | @功能     |
 | status    | tinyint(10)  | 1       | 状态      |
@@ -236,6 +236,6 @@
 | -------- | ------- | ------- | ------- |
 | id       | int     |         | 主键      |
 | user_id  | int(10) |         | 点赞人     |
-| topic_id | int(10) |         | 话题ID    |
+| note_id | int(10) |         | 话题ID    |
 | add_time | int(10) |         | 点赞时间    |
 
