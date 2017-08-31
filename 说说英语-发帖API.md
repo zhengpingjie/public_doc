@@ -213,11 +213,11 @@
 | images       | varchat(255) |         | 附图         |
 | notice       | varchat(100) |         | @功能        |
 | type         | tinyint(1)   | 1       | 话题类型       |
-| flag         | tinyint(1)   |         | 标签         |
+| flag         | tinyint(1)   | 0       | 标签         |
 | sort         | int(10)      | 0       | 排序         |
-| follow_count | int(10)      |         | 回复数        |
-| agree_count  | int(10)      |         | 点赞数        |
-| status       | tinyint(10)  |         | 状态         |
+| follow_count | int(10)      | 0       | 回复数        |
+| agree_count  | int(10)      | 0       | 点赞数        |
+| status       | tinyint(10)  | 1       | 状态         |
 | add_time     | int(10)      |         | 发表时间       |
 
 ## 回复表[follow]
@@ -226,9 +226,9 @@
 | id        | int          |         | 主键      |
 | user_id   | int(10)      |         | 回复人     |
 | topic_id  | int(10)      |         | 话题ID    |
-| follow_id | int(10)      |         | 回复ID    |
+| follow_id | int(10)      | 0       | 回复ID    |
 | notice    | varchat(100) |         | @功能     |
-| status    | tinyint(10)  |         | 状态      |
+| status    | tinyint(10)  | 1       | 状态      |
 | add_time  | int(10)      |         | 回复时间    |
 
 ## 点赞表[agree]
