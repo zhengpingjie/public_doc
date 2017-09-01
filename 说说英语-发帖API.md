@@ -7,11 +7,11 @@
     user_id: 发表人
     content: 话题内容
     type: 话题类型: 1,朋友圈；2，英语圈
-    images: {
-        0: 'http://xxx',
-        1: 'http://xxx'
-    },
     notice: {}
+    // 表单文件
+    image1: __FILE__
+    image2: __FILE__
+    image3: __FILE__
 }
 ```
 - 返回参数
