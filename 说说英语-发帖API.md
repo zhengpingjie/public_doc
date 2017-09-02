@@ -114,6 +114,7 @@
                 id: 话题ID
                 user_id: 发表人
                 user_name: 昵称
+                face: 用户头像
                 content: 话题内容
                 images: {
                     0: 'http://xxx',
@@ -157,7 +158,9 @@
                 id: 
                 user_id: 回复人
                 user_name: 昵称
+                face: 用户头像
                 note_id: 话题ID
+                content: 回复内容
                 follow_id: 0
                 notice: {}
                 status: 状态
@@ -192,6 +195,7 @@
                 id: 
                 user_id: 点赞人
                 user_name: 昵称
+                face: 用户头像
                 note_id: 话题ID
                 add_time: 点赞时间
             }
