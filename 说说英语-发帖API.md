@@ -23,10 +23,10 @@
         id: 话题ID
         user_id: 发表人
         content: 话题内容
-        images: {
-            0: 'http://xxx',
-            1: 'http://xxx'
-        }
+        images: [
+            'http://xxx',
+            'http://xxx'
+        ],
         notice: {}
         type: 话题类型
         flag: 话题标签
@@ -116,10 +116,10 @@
                 user_name: 昵称
                 face: 用户头像
                 content: 话题内容
-                images: {
-                    0: 'http://xxx',
-                    1: 'http://xxx'
-                }
+                images: [
+                    'http://xxx',
+                    'http://xxx'
+                ],
                 notice: {}
                 type: 话题类型
                 flag: 话题标签
