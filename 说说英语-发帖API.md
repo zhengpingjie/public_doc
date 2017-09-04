@@ -96,6 +96,7 @@
 - 请求参数
 ```
 {
+    user_id: 当前登录用户
     type: 1:朋友圈; 2:英语圈; 3: 热门; 
     page: 页码
     limit: 每页数量
@@ -128,6 +129,7 @@
                 agree_count: 点赞数量
                 status: 话题状态
                 add_time: 添加时间
+                agreed: 已点赞 ? 1 : 0
             }
             ...
         ]
