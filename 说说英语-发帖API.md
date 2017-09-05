@@ -231,8 +231,9 @@
 | --------- | ------------ | ------- | ------- |
 | id        | int          |         | 主键      |
 | user_id   | int(10)      |         | 回复人     |
-| note_id  | int(10)      |         | 话题ID    |
+| note_id   | int(10)      |         | 话题ID    |
 | follow_id | int(10)      | 0       | 回复ID    |
+| content   | varchat(100) |         | 回复内容 |
 | notice    | varchat(100) |         | @功能     |
 | status    | tinyint(10)  | 1       | 状态      |
 | add_time  | int(10)      |         | 回复时间    |
