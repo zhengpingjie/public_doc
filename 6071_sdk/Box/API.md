@@ -289,6 +289,8 @@
                     has_gift: 是否有礼包
                     down_url: 统计下载地址
                     size_text: 游戏大小描述
+                    benefits: 是否返利
+                    benefits_rate: 返利比例
                 },
                 ...
             ]
@@ -351,9 +353,9 @@
 - 返回参数:  
 ```
 {
-    code: 
-    message: 
-    date: [
+    code: 1,
+    message: 接口信息,
+    data: [
         {
             game_id: 游戏ID
             name: 游戏名称
@@ -382,16 +384,15 @@
 
 - 接口名: box/searchTag 
 - 请求参数:  
-```
-{
-}
-```
 - 返回参数:  
 ```
 {
-    code: 
-    message: 
-    date: ['游戏名',...]
+    code: 1,
+    message: 接口信息,
+    data: [
+        '游戏名',
+        ...
+    ]
 }
 ```
 
@@ -409,9 +410,9 @@
 - 返回参数:  
 ```
 {
-    code: 
-    message: 
-    date: [
+    code: 1,
+    message: 接口信息,
+    data: [
         {
             game_id: 游戏ID
             name: 游戏名称
@@ -450,9 +451,9 @@
 - 返回参数:  
 ```
 {
-    code: 
-    message: 
-    date: [
+    code: 1,
+    message: 接口信息,
+    data: [
         {
             game_id: 游戏ID
             game_name: 游戏名称
@@ -471,17 +472,17 @@
 - 请求参数:  
 ```
 {
-    game_id
-    page
-    limit
+    game_id: 游戏ID
+    page: 页码
+    limit: 分页数
 }
 ```
 - 返回参数:  
 ```
 {
-    code: 
-    message: 
-    date: [
+    code: 1,
+    message: 接口信息,
+    data: [
         {
             id: 礼包ID
             name: 礼包名称
@@ -508,14 +509,14 @@
 - 请求参数:  
 ```
 {
-    gift_id
+    gift_id: 礼包ID
 }
 ```
 - 返回参数:  
 ```
 {
-    code: 
-    message: 
+    code: 1,
+    message: 接口信息,
     date: {
         id: 礼包ID
         name: 礼包名称
@@ -548,9 +549,11 @@
 - 返回参数:  
 ```
 {
-    code: 
-    message: 
-    date: 
+    code: 1,
+    message: 接口信息,
+    data: {
+        code: 礼包码
+    }
 }
 ```
 
@@ -569,9 +572,9 @@
 - 返回参数:  
 ```
 {
-    code: 
-    message: 
-    date: [
+    code: 1,
+    message: 接口信息,
+    data: [
         {
             id: 礼包ID
             name: 礼包名称
@@ -598,9 +601,11 @@
 - 返回参数:  
 ```
 {
-    code: 
-    message: 
-    date: 
+    code: 1,
+    message: 接口信息,
+    data: {
+        code: 礼包码
+    }
 }
 ```
 
@@ -617,8 +622,8 @@
 - 返回参数:  
 ```
 {
-    code: 
-    message: 
+    code: 1,
+    message: 接口信息,
     date: {
         id: 
         name: 
@@ -675,8 +680,8 @@
 - 返回参数:  
 ```
 {
-    code: 
-    message: 
+    code: 1,
+    message: 接口信息,
     date: {
         id: 
         name: 
@@ -738,9 +743,9 @@
 - 返回参数:  
 ```
 {
-    code: 
-    message: 
-    date: 
+    code: 1,
+    message: 接口信息,
+    data:
 }
 ```
 
@@ -759,9 +764,9 @@
 - 返回参数:  
 ```
 {
-    code: 
-    message: 
-    date: 
+    code: 1,
+    message: 接口信息,
+    data:
 }
 ```
 
@@ -846,18 +851,19 @@
 - 请求参数:  
 ```
 {
-    user_id
-    user_name
+    user_id: 用户ID
+    user_name: 用户名
     status:  -1所有 1支付失败 2支付成功 3充值失败 4充值完成 
-    page
+    page: 页码
+    limit: 分页数
 }
 ```
 - 返回参数:  
 ```
 {
-    code: 
-    message: 
-    date: [
+    code: 1,
+    message: 接口信息,
+    data: [
         {
             order_sn: 订单号
             status: 订单状态
@@ -879,17 +885,17 @@
 - 请求参数:  
 ```
 {
-    user_id
-    page
-    limit
+    user_id: 用户ID
+    page: 页码
+    limit: 分页数
 }
 ```
 - 返回参数:  
 ```
 {
-    code: 
-    message: 
-    date: [
+    code: 1,
+    message: 接口信息,
+    data: [
         {
             game_id: 游戏ID
             name: 游戏名称
@@ -921,26 +927,26 @@
 - 请求参数:  
 ```
 {
-    user_id
-    name
-    pwd
-    email
-    mobile
-    nick_name
-    qq
-    sex
-    birth
-    area_id
-    question
-    answer
+    user_id: 用户ID
+    name: 用户名
+    pwd: 密码
+    email: 邮箱
+    mobile: 手机
+    nick_name: 昵称
+    qq: QQ号
+    sex: 性别
+    birth: 生日
+    area_id: 地区
+    question: 问题
+    answer: 答案
 }
 ```
 - 返回参数:  
 ```
 {
-    code: 
-    message: 
-    date: 
+    code: 1,
+    message: 接口信息,
+    data: 
 }
 ```
 
@@ -950,16 +956,16 @@
 - 请求参数:  
 ```
 {
-    user_id
-    img
+    user_id: 用户ID
+    img: 头像
 }
 ```
 - 返回参数:  
 ```
 {
-    code: 
-    message: 
-    date: 
+    code: 1,
+    message: 接口信息,
+    data: 
 }
 ```
 
@@ -969,7 +975,7 @@
 - 请求参数:  
 ```
 {
-    user_id
+    user_id: 用户ID
 }
 ```
 
@@ -979,8 +985,8 @@
 - 请求参数:  
 ```
 {
-    mobile
-    pwd
+    mobile: 手机
+    pwd: 密码
 }
 ```
 
@@ -990,8 +996,8 @@
 - 请求参数:  
 ```
 {
-    user_id
-    pwd
+    mobile: 手机
+    pwd: 密码
 }
 ```
 
@@ -1014,8 +1020,8 @@
 - 返回参数:  
 ```
 {
-    code: 
-    message: 
+    code: 1,
+    message: 接口信息,
     date: wx_sign: 微信支付特有参数
     order_num: 订单号
     params: 订单参数
@@ -1028,20 +1034,16 @@
 
 - 接口名: box/payWayList 
 - 请求参数:  
-```
-{
-}
-```
 - 返回参数:  
 ```
 {
-    code: 
-    message: 
-    date: [
+    code: 1,
+    message: 接口信息,
+    data: [
         {
-            id
-            title: 
-            desp: 
+            id: 支付方式ID
+            title: 支付名称
+            desp: 支付描述
         },
         ...
     ]
@@ -1054,15 +1056,53 @@
 - 请求参数:  
 ```
 {
-    user_id
+    user_id: 用户ID
 }
 ```
 - 返回参数:  
 ```
 {
-    code: 
-    message: 
-    date: 
+    code: 1,
+    message: 接口信息,
+    data: {
+        repeat: [
+            {
+                log_action_name: 任务标记
+                log_point: 历史累计积分
+                id: 任务ID
+                point_action_id: 规则ID
+                point: 规则积分
+                name: 任务标记
+                title: 任务中文名
+                title_sub: 任务简称
+                desp: 任务说明
+                ico: 任务图标
+                type: 任务类型
+                app_active: APP动作
+                [share_content: 分享内容]
+                [share_imgs: 分享图片]
+            }
+            ...
+        ],
+        once: [
+            {
+                log_action_name: 任务标记
+                log_point: 历史累计积分
+                id: 任务ID
+                point_action_id: 规则ID
+                point: 规则积分
+                name: 任务标记
+                title: 任务中文名
+                title_sub: 任务简称
+                desp: 任务说明
+                ico: 任务图标
+                type: 任务类型
+                app_active: APP动作
+            }
+            ...
+        ]
+    }
+    ]
 }
 ```
 
@@ -1070,16 +1110,12 @@
 
 - 接口名: box/goodsType 
 - 请求参数:  
-```
-{
-}
-```
 - 返回参数:  
 ```
 {
-    code: 
-    message: 
-    date: [
+    code: 1,
+    message: 接口信息,
+    data: [
         {
             id: 商品分类id
             name: 商品分类名称
@@ -1109,9 +1145,9 @@
 - 返回参数 
 ```
 {
-    code: 
-    message: 
-    date: [
+    code: 1,
+    message: 接口信息,
+    data: [
         {
             id: 商品id
             name: 商品名称
@@ -1151,8 +1187,8 @@
 - 返回参数:  
 ```
 {
-    code: 
-    message: 
+    code: 1,
+    message: 接口信息,
     date: {
         id: 商品id
         name: 商品名称
@@ -1193,9 +1229,9 @@
 - 返回参数:  
 ```
 {
-    code: 
-    message: 
-    date: [
+    code: 1,
+    message: 接口信息,
+    data: [
         {
             id: 购买记录ID
             user_id: 用户ID
@@ -1242,9 +1278,9 @@
 - 返回参数:  
 ```
 {
-    code: 
-    message: 
-    date: 
+    code: 1,
+    message: 接口信息,
+    data: 
 }
 ```
 
@@ -1262,9 +1298,9 @@
 - 返回参数:  
 ```
 {
-    code: 
-    message: 
-    date: 
+    code: 1,
+    message: 接口信息,
+    data: 
 }
 ```
 
@@ -1282,9 +1318,9 @@
 - 返回参数:  
 ```
 {
-    code: 
-    message: 
-    date: 
+    code: 1,
+    message: 接口信息,
+    data: 
 }
 ```
 
@@ -1301,9 +1337,9 @@
 - 返回参数:  
 ```
 {
-    code: 
-    message: 
-<data></data>ate: 
+    code: 1,
+    message: 接口信息,
+    data: 
 }
 ```
 
@@ -1311,16 +1347,12 @@
 
 - 接口名: box/slide 
 - 请求参数:  
-```
-{
-}
-```
 - 返回参数:  
 ```
 {
-    code: 
-    message: 
-    date: [
+    code: 1,
+    message: 接口信息,
+    data: [
         {
             title: 标题
             img: 图片
@@ -1349,9 +1381,9 @@
 - 返回参数:  
 ```
 {
-    code: 
-    message: 
-    date: [
+    code: 1,
+    message: 接口信息,
+    data: [
         {
             game_name: 游戏名称
             ico: 图标
@@ -1379,9 +1411,9 @@
 - 返回参数:  
 ```
 {
-    code: 
-    message: 
-    date: [
+    code: 1,
+    message: 接口信息,
+    data: [
         {
             pay_money: 充值金额
             discount: 折扣
@@ -1407,10 +1439,12 @@
 - 返回参数:  
 ```
 {
-    code: 
-    message: 
-    date: order_money: 订单金额
-    return_game_money: 返利游戏币
+    code: 1,
+    message: 接口信息,
+    date: {
+        order_money: 订单金额
+        return_game_money: 返利游戏币
+    }
 }
 ```
 
@@ -1428,7 +1462,9 @@
 - 返回参数 
 ```
 {
-    [
+    code: 1,
+    message: 接口信息,
+    date: [
         {
             id:  记录ID,
             action_title:  记录标题,
@@ -1454,9 +1490,9 @@
 - 返回参数:  
 ```
 {
-    code: 
-    message: 
-    date: [
+    code: 1,
+    message: 接口信息,
+    data: [
         {
             game_id: 游戏ID
             name: 游戏名称
