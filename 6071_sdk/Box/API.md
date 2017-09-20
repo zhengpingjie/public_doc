@@ -80,7 +80,6 @@
         },
         agent_info:用户渠道信息 其他渠道的用户登录时，保存该信息至本地，用于下次启动
         
-        // 启动信息
         launch_img:启动图,
         type:动作类型 0：盒子内游戏，1：网页,
         type_value:动作值 'avtivity'/url,
