@@ -60,6 +60,7 @@
 ```
 
 <h2 id="init">初始化</h2>
+
 - 接口名: box/init 
 - 请求参数
 - 返回参数
@@ -89,6 +90,7 @@
 ```
 
 <h2 id="game-list">游戏列表</h2>
+
 - 接口名: box/gameList 
 - 请求参数 
 ```
@@ -130,6 +132,7 @@
 ```
 
 <h2 id="game-info">游戏信息</h2>
+
 - 接口名: box/gameInfo 
 - 请求参数 
 ```
@@ -153,6 +156,7 @@
 ```
 
 <h2 id="game-info-full">游戏详细信息</h2>
+
 - 接口名: box/gameInfoFull 
 - 请求参数 
 ```
@@ -189,6 +193,7 @@
 ```
 
 <h2 id="cate-list">分类列表</h2>
+
 - 接口名: box/cateList 
 - 请求参数 
 -返回参数
@@ -211,6 +216,7 @@
 ```
 
 <h2 id="other-down">其他人下载</h2>
+
 - 接口名: box/otherDown 
 - 请求参数 
 ```
@@ -249,6 +255,7 @@
 ```
 
 <h2 id="special-list">专题列表</h2>
+
 - 接口名: box/specialList 
 - 请求参数 
 - 返回参数:  
@@ -292,6 +299,7 @@
 ```
 
 <h2 id="special-games">专题游戏列表</h2>
+
 - 接口名: box/specialGames 
 - 请求参数:  
 ```
@@ -332,6 +340,7 @@
 ```
 
 <h2 id="game-update">游戏升级</h2>
+
 - 接口名: box/gameUpdate 
 - 请求参数:  
 ```
@@ -370,6 +379,7 @@
 ```
 
 <h2 id="search-tag">大家都在搜</h2>
+
 - 接口名: box/searchTag 
 - 请求参数:  
 ```
@@ -386,6 +396,7 @@
 ```
 
 <h2 id="search">搜索</h2>
+
 - 接口名: box/search 
 - 请求参数:  
 ```
@@ -426,6 +437,7 @@
 ```
 
 <h2 id="gift-index">礼包首页</h2>
+
 - 接口名: box/giftIndex 
 - 请求参数:  
 ```
@@ -454,6 +466,7 @@
 
 
 <h2 id="gift-list">礼包列表</h2>
+
 - 接口名: box/giftList 
 - 请求参数:  
 ```
@@ -490,6 +503,7 @@
 ```
 
 <h2 id="gift-info">礼包信息</h2>
+
 - 接口名: box/giftInfo 
 - 请求参数:  
 ```
@@ -522,6 +536,7 @@
 ```
 
 <h2 id="convert-gift">兑换礼包</h2>
+
 - 接口名: box/convertGift 
 - 请求参数:  
 ```
@@ -540,6 +555,7 @@
 ```
 
 <h2 id="my-gift">我的礼包</h2>
+
 - 接口名: box/myGift 
 - 请求参数:  
 ```
@@ -570,6 +586,7 @@
 ```
 
 <h2 id="my-gift-getail">我的礼包详情</h2>
+
 - 接口名: box/myGiftDetail 
 - 请求参数:  
 ```
@@ -588,6 +605,7 @@
 ```
 
 <h2 id="reg">注册</h2>
+
 - 接口名: box/reg 
 - 请求参数:  
 ```
@@ -645,6 +663,7 @@
 ```
 
 <h2 id="login">登录</h2>
+
 - 接口名: box/login 
 - 请求参数:  
 ```
@@ -706,6 +725,7 @@
 ```
 
 <h2 id="sendcode">发送验证码</h2>
+
 - 接口名: box/sendcode 
 - 请求参数:  
 ```
@@ -725,6 +745,7 @@
 ```
 
 <h2 id="checkcode">验证验证码</h2>
+
 - 接口名: box/checkcode 
 - 请求参数:  
 ```
@@ -745,6 +766,7 @@
 ```
 
 <h2 id="user-info">用户资料</h2>
+
 - 接口名: box/userInfo 
 - 请求参数:  
 ```
@@ -819,6 +841,7 @@
 ```
 
 <h2 id="user-record">充值记录</h2>
+
 - 接口名: box/userRecord 
 - 请求参数:  
 ```
@@ -851,6 +874,7 @@
 ```
 
 <h2 id="user-game">我的游戏</h2>
+
 - 接口名: box/userGame 
 - 请求参数:  
 ```
@@ -892,6 +916,7 @@
 ```
 
 <h2 id="update-user">更新个人资料</h2>
+
 - 接口名: box/updateUser 
 - 请求参数:  
 ```
@@ -920,6 +945,7 @@
 ```
 
 <h2 id="upload-user-inavatar">上传头像</h2>
+
 - 接口名: box/uploadUserInavatar 
 - 请求参数:  
 ```
@@ -938,6 +964,7 @@
 ```
 
 <h2 id="sign">用户签到</h2>
+
 - 接口名: box/sign 
 - 请求参数:  
 ```
@@ -947,6 +974,7 @@
 ```
 
 <h2 id="forget-pwd">忘记密码</h2>
+
 - 接口名: box/forgetPwd 
 - 请求参数:  
 ```
@@ -957,6 +985,7 @@
 ```
 
 <h2 id="reset-pwd">忘记密码</h2>
+
 - 接口名: box/resetPwd 
 - 请求参数:  
 ```
@@ -967,6 +996,7 @@
 ```
 
 <h2 id="order">创建订单</h2>
+
 - 接口名: box/order 
 - 请求参数:  
 ```
@@ -995,6 +1025,7 @@
 ```
 
 <h2 id="pay-way-list">支付列表</h2>
+
 - 接口名: box/payWayList 
 - 请求参数:  
 ```
@@ -1018,6 +1049,7 @@
 ```
 
 <h2 id="tasks">任务列表</h2>
+
 - 接口名: box/tasks 
 - 请求参数:  
 ```
@@ -1035,6 +1067,7 @@
 ```
 
 <h2 id="goods-type">商品分类</h2>
+
 - 接口名: box/goodsType 
 - 请求参数:  
 ```
@@ -1062,6 +1095,7 @@
 ```
 
 <h2 id="goods-list">商品列表</h2>
+
 - 接口名: box/goodsList 
 - 请求参数:  
 ```
@@ -1106,6 +1140,7 @@
 ```
 
 <h2 id="goods-info">商品详情</h2>
+
 - 接口名: box/goodsInfo 
 - 请求参数:  
 ```
@@ -1144,6 +1179,7 @@
 ```
 
 <h2 id="my-goods">购买记录</h2>
+
 - 接口名: box/myGoods 
 - 请求参数:  
 ```
@@ -1194,6 +1230,7 @@
 
 
 <h2 id="goods-convert">商品兑换</h2>
+
 - 接口名: box/goodsConvert 
 - 请求参数:  
 ```
@@ -1212,6 +1249,7 @@
 ```
 
 <h2 id="install">盒子游戏安装日志</h2>
+
 - 接口名: box/install 
 - 请求参数:  
 ```
@@ -1231,6 +1269,7 @@
 ```
 
 <h2 id="uninstall">游戏卸载日志</h2>
+
 - 接口名: box/uninstall 
 - 请求参数:  
 ```
@@ -1250,6 +1289,7 @@
 ```
 
 <h2 id="api-game-down">增加导入游戏下载次数</h2>
+
 - 接口名: box/apiGameDown 
 - 请求参数:  
 ```
@@ -1268,6 +1308,7 @@
 ```
 
 <h2 id="slide">幻灯片</h2>
+
 - 接口名: box/slide 
 - 请求参数:  
 ```
@@ -1294,6 +1335,7 @@
 ```
 
 <h2 id="game-kaifu-list">开服表</h2>
+
 - 接口名: box/gameKaifuList 
 - 请求参数:  
 ```
@@ -1326,6 +1368,7 @@
 ```
 
 <h2 id="payopt">支付选项</h2>
+
 - 接口名: box/payopt 
 - 请求参数 
 ```
@@ -1351,6 +1394,7 @@
 ```
 
 <h2 id="get-order-pay-money">获取订单实付金额</h2>
+
 - 接口名: box/getOrderPayMoney 
 - 请求参数:  
 ```
@@ -1371,6 +1415,7 @@
 ```
 
 <h2 id="point-log">用户积分记录</h2>
+
 - 接口名: box/pointLog 
 - 请求参数:  
 ```
@@ -1397,6 +1442,7 @@
 ```
 
 <h2 id="benefits-game">返利游戏列表</h2>
+
 - 接口名: box/benefitsGame 
 - 请求参数:  
 ```
