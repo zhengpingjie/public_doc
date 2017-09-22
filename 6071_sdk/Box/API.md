@@ -47,6 +47,8 @@
  - [获取订单实付金额](#get-order-pay-money) 
  - [用户积分记录](#point-log) 
  - [返利游戏列表](#benefits-game) 
+ - [抽奖信息](#luck-draw) 
+ - [用户抽奖](#draw) 
 
 **公共请求参数列表**
 ```
@@ -1517,6 +1519,68 @@
 }
 ```
 
+<h2 id="luck-draw">抽奖</h2>
+
+- 接口名: box/luckDraw 
+- 请求参数:  
+```
+{
+    user_id: 用户ID
+}
+```
+- 返回参数:  
+```
+{
+    code: 1,
+    message: 接口信息,
+    data: {
+        luck_draw_info: {
+            id: 活动ID
+            title: 抽奖活动名称
+            name: 活动标记
+            desp: 活动简介
+            img: 活动图片
+            start_time: 开始时间
+            end_time: 结束时间
+            start_date: 开始日期
+            end_date: 结束日期
+            status: 活动状态
+            login_access: 是否开启登录抽奖
+            rule: 抽奖规则
+        }
+        goods_list: [
+            {
+                id: 奖品ID
+                name: 奖品名称
+                img: 奖品图片
+            }
+            ...
+        ]
+        draw_times: 剩余抽奖次数
+    }
+}
+```
+
+<h2 id="draw">用户抽奖</h2>
+
+- 接口名: box/draw 
+- 请求参数:  
+```
+{
+    user_id: 用户ID
+}
+```
+- 返回参数:  
+```
+{
+    code: 1,
+    message: 接口信息,
+    data: {
+        good_id: 奖品ID
+        good_name: 奖品名称
+    }
+}
+```
 
 
 
