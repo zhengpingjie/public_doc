@@ -35,8 +35,6 @@
     msg:
     data:{
         order_sn: 平台订单号
-        server：游戏区服
-        role：角色ID
     }
 }
 ```

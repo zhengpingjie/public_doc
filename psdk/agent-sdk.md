@@ -39,7 +39,7 @@ $sdk->valiPay($key);
 参数
 - key：与渠道约定的秘钥
 返回
-- true 充值验证成功
+- order_sn 平台订单号
 - false 充值验证失败
 
 ### 订单数据格式化
