@@ -7,6 +7,7 @@
 - `valiLogin`登录校验
 - `valiNotify`充值回调通知校验
 - `formatOrderParams`订单数据格式化
+
 即需要实现`Api\Server\AgentSdk\ISdk`接口。
 
 
