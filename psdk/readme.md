@@ -1,6 +1,6 @@
 # 聚合SDK相关过程时序图
 
-<img src="http://sdk.289.com/Public/active.jpg?t=NipWms" alt="Build Status">
+<img src="http://sdk.289.com/Public/active.jpg?t=NipWmskps" alt="Build Status">
 
 ## 过程说明
 ### 用户登录
@@ -10,19 +10,29 @@
 - 聚合SDK登录验证成功后，调用厂商SDK的登录方法完成登录
 
 ### 用户充值
-- 用户进行充值，调用渠道SDK的订单号创建方法。
-- 渠道SDK调用聚合SDK的订单号创建方法(@order_sn)
-- 聚合SDK请求聚合Server的[login接口](https://github.com/slpi1/public_doc/blob/master/psdk/api.md#登录接口)，验证请求的合法性
-- 聚合SDK调用厂商SDK的订单号创建方法，获取厂商订单号(attach)
-- 聚合SDK请求聚合Serve的[order_sn接口](https://github.com/slpi1/public_doc/blob/master/psdk/api.md#订单号创建接口)，创建聚合平台订单号
-- 聚合SDK返回平台订单号给渠道SDK
-- 渠道SDK根据平台订单号创建订单
-- 渠道SDK调用聚合SDL的订单创建方法(@order)
-- 聚合SDK调用聚合Server的[order接口](https://github.com/slpi1/public_doc/blob/master/psdk/api.md#订单创建接口)，创建聚合平台订单
-- 聚合SDK调用厂商订单创建方法(@order)
-- 返回订单详情
+- 用户进行充值，调用厂商SDK创建订单
+- 厂商创建订单后，回调聚合SDK的订单创建方法(@order)
+- 聚合SDK接受订单参数后，请求聚合Serve的[order接口](https://github.com/slpi1/public_doc/blob/master/psdk/api.md#订单创建接口)
+- 聚合SDK接受到订单数据后，回调渠道sdk的订单创建方法
 
 ### 充值成功回调
 - 渠道Server收到第三方充值成功回调信息
 - 渠道Server通知聚合Server充值成功消息，请求聚合Server的[notify接口](https://github.com/slpi1/public_doc/blob/master/psdk/api.md#支付成功回调接口)
 - 聚合Server通知厂商Server充值成功消息
+
+## 约定
+### 厂商与聚合平台的约定 - [文档](https://github.com/slpi1/public_doc/blob/master/psdk/doc.md)
+- 约定用户登录验证方式。由聚合平台向厂商提供相相关文档。
+- 约定订单相关参数。由聚合平台向厂商提供相关文档。
+- 约定充值回调接口，厂商提供回调接口。由聚合平台向厂商提供相关文档
+
+### 聚合平台与渠道的约定 - 文档(由渠道提供)
+- 约定用户登录验证方式。由渠道向聚合平台提供相关文档。
+- 约定订单相关参数。由渠道向聚合平台提供相关文档。
+- 约定充值回调接口，聚合平台提供回调接口。由渠道向平台提供相关文档。
+
+### 附
+[游戏厂商接入文档](https://github.com/slpi1/public_doc/blob/master/psdk/doc.md)
+[API](https://github.com/slpi1/public_doc/blob/master/psdk/api.md)
+[渠道SDK规范](https://github.com/slpi1/public_doc/blob/master/psdk/agent-sdk.md)
+
