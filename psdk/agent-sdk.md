@@ -9,6 +9,7 @@
 - `valiNotify`充值回调通知校验
 - `notifyFailed`通知失败返回信息
 - `notifySuccess`通知成功返回信息
+- `formatAgentOrderParams`渠道订单数据格式化
 - `formatPlatformOrderParams`聚合平台订单数据格式化
 
 即需要实现`Api\Server\AgentSdk\ISdk`接口。
@@ -46,6 +47,23 @@ $sdk->notifyFailed($msg);
 $sdk->notifySuccess();
 ```
 返回数据格式，按照渠道对接文档定制。
+
+### 通知成功返回信息
+```
+$sdk->formatAgentOrderParams();
+```
+返回
+```
+{
+    user_name: 渠道用户名 (必要参数)
+    agent_order_sn: 渠道订单号 (必要参数)
+    order_sn: 聚合平台订单号 (必要参数)
+    money: 订单金额 (必要参数)
+    serve: 服务器ID
+    role: 角色ID
+    ip: 用户IP
+}
+```
 
 ### 聚合平台订单数据格式化
 将聚合平台的订单数据格式化为渠道订单所需格式，方便SDK回调传参，是`formatAgentOrderParams`的逆过程。
