@@ -1,6 +1,6 @@
 # 聚合SDK相关过程时序图
 
-<img src="http://sdk.289.com/Public/active.jpg" alt="Build Status">
+<img src="http://sdk.289.com/Public/active.jpg?t=NipWms" alt="Build Status">
 
 ## 过程说明
 ### 用户登录
