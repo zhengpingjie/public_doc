@@ -31,10 +31,8 @@
 - 约定订单相关参数。由渠道向聚合平台提供相关文档。
 - 约定充值回调接口，聚合平台提供回调接口。由渠道向平台提供相关文档。
 
-### 附
-[游戏厂商接入文档](https://github.com/slpi1/public_doc/blob/master/psdk/doc.md)
-
-[API](https://github.com/slpi1/public_doc/blob/master/psdk/api.md)
-
-[渠道SDK规范](https://github.com/slpi1/public_doc/blob/master/psdk/agent-sdk.md)
+## 附
+- [游戏厂商接入文档](https://github.com/slpi1/public_doc/blob/master/psdk/doc.md)
+- [API](https://github.com/slpi1/public_doc/blob/master/psdk/api.md)
+- [渠道SDK规范](https://github.com/slpi1/public_doc/blob/master/psdk/agent-sdk.md)
 

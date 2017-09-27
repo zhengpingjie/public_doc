@@ -16,6 +16,8 @@
     msg:
     data:{
         user_id: 平台用户ID
+        app_id: 应用ID
+        isadult: 用户是否成年
         timestamp: 时间戳
         sign: 签名
     }
@@ -26,7 +28,15 @@
 - 接口名: `order/{appId}/{agentId}`
 - 请求参数：
 ```
-以渠道提供的文档为准
+{
+    user_id：聚合平台用户ID
+    app_id：应用ID
+    attach：游戏订单号
+    money：订单金额
+    server：游戏区服
+    role：用户角色
+    ip：用户IP
+}
 ```
 - 返回参数
 ```
@@ -35,6 +45,8 @@
     msg:
     data:{
         order_sn: 平台订单号
+        
+        其他参数，以渠道提供的文档为准
     }
 }
 ```
@@ -51,4 +63,5 @@
 `以渠道提供的文档为准`
 ```
 
-附：[渠道SDK规范](https://github.com/slpi1/public_doc/blob/master/psdk/agent-sdk.md)
+# 附
+- [渠道SDK规范](https://github.com/slpi1/public_doc/blob/master/psdk/agent-sdk.md)
