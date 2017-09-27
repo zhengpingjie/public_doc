@@ -33,6 +33,8 @@
 
 ### 附
 [游戏厂商接入文档](https://github.com/slpi1/public_doc/blob/master/psdk/doc.md)
+
 [API](https://github.com/slpi1/public_doc/blob/master/psdk/api.md)
+
 [渠道SDK规范](https://github.com/slpi1/public_doc/blob/master/psdk/agent-sdk.md)
 
