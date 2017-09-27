@@ -2,6 +2,7 @@
 
 ## 登录效验
 - 参数列表
+
 | KEY      | TYPE    | COMMENT |
 | -------- | ------- | ------- |
 | user_id | int     | 用户ID      |
@@ -21,6 +22,7 @@ $sign = strtolower(md5($user_id . $appid . $isadult . $timestamp . $key));
 ## 创建订单
 游戏厂商在接受到订单创建的请求并创建订单成功后，需要将订单相关信息按如下参数传递至回调函数中。
 - 参数列表
+
 | KEY      | TYPE    | COMMENT |
 | -------- | ------- | ------- |
 | user_id | int     | 用户ID      |
@@ -32,6 +34,7 @@ $sign = strtolower(md5($user_id . $appid . $isadult . $timestamp . $key));
 
 ## 支付回调
 - 参数列表
+
 | KEY      | TYPE    | COMMENT |
 | -------- | ------- | ------- |
 | user_id | int     | 用户ID      |
