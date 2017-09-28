@@ -5,6 +5,7 @@
 渠道SDK入口文件为: `./Api/Server/AgentSdk/{agent_id}/Sdk.class.php`，类名为: `Sdk`；如果通过命名空间的方式，请使用该命名空间: `Api\Server\AgentSdk\{agent_id}\Sdk`。
 
 渠道SDK文件需要提供以下接口: 
+- `params`参数获取
 - `valiLogin`登录校验
 - `valiNotify`充值回调通知校验
 - `notifyFailed`通知失败返回信息
@@ -13,6 +14,12 @@
 - `formatPlatformOrderParams`聚合平台订单数据格式化
 
 即需要实现`Api\Server\AgentSdk\ISdk`接口。
+
+### 参数获取
+```
+$sdk->params();
+```
+返回数据格式，按照渠道对接文档定制。
 
 ### 登录校验
 ```
