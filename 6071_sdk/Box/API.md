@@ -24,7 +24,7 @@
  - [验证验证码](#checkcode) 
  - [用户资料](#user-info) 
  - [充值记录](#user-record) 
- - [我的游戏](#user-rame) 
+ - [我的游戏](#user-game) 
  - [更新个人资料](#update-user) 
  - [上传头像](#upload-user-inavatar) 
  - [用户签到](#sign) 
@@ -211,6 +211,29 @@
             ico: 分类图标
             desp: 分类描述
             size: 分类游戏数量
+            
+            game_list: [
+                {
+                    benefits: 是否返利
+                    benefits_rate: 返利比例
+                    game_id: 游戏ID
+                    name: 游戏名称
+                    ico: 游戏logo
+                    size: 游戏大小
+                    desp: 描述
+                    cate_name: 分类名称
+                    package_name: 包名
+                    version_name: 版本号
+                    update_time: 更新时间
+                    download_times: 下载次数
+                    url: 绝对下载地址
+                    type: 游戏类别
+                    has_gift: 是否有礼包
+                    down_url: 统计下载地址
+                    size_text: 游戏大小描述
+                }
+                ...
+            ]
         }
         ...
     ]
@@ -273,29 +296,10 @@
             desp: 专题描述
             sort: 专题排序
             status: 专题状态
-            _list: 专题游戏列表
-            [
-                {
-                    game_id: 游戏ID
-                    name: 游戏名称
-                    ico: 游戏logo
-                    size: 游戏大小
-                    desp: 描述
-                    cate_name: 分类名称
-                    package_name: 包名
-                    version_name: 版本号
-                    update_time: 更新时间
-                    download_times: 下载次数
-                    url: 绝对下载地址
-                    type: 游戏类别
-                    has_gift: 是否有礼包
-                    down_url: 统计下载地址
-                    size_text: 游戏大小描述
-                    benefits: 是否返利
-                    benefits_rate: 返利比例
-                },
-                ...
-            ]
+            
+            time: 活动时间 （格式：9.13-9.15）
+            start_time: 开始时间
+            end_time: 结束时间
         },
         ...
     ]
@@ -1395,6 +1399,9 @@
             file_path: 下载地址
             type: 游戏类别
             down_url: 统计下载地址
+            
+            size_text: 游戏大小
+            download_times: 下载次数
         },
         ...
     ]
