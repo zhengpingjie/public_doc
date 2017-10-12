@@ -49,6 +49,7 @@
  - [返利游戏列表](#benefits-game) 
  - [抽奖信息](#luck-draw) 
  - [用户抽奖](#draw) 
+ - [用户返利申请](#repay-apply) 
 
 **公共请求参数列表**
 ```
@@ -1589,5 +1590,31 @@
 }
 ```
 
+<h2 id="repay-apply">用户返利申请</h2>
+
+- 接口名: box/repayApply 
+- 请求参数:  
+```
+{
+    user_id: 用户ID
+    game_id: 游戏ID
+    login_name: 游戏账号
+    role: 角色名
+    role_id: 角色ID
+    server: 游戏区服
+    money: 充值金额
+}
+```
+- 返回参数:  
+```
+{
+    code: 1,
+    message: 接口信息,
+    data: {
+        good_id: 奖品ID
+        good_name: 奖品名称
+    }
+}
+```
 
 
