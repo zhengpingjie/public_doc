@@ -129,6 +129,7 @@
             down_url: 统计下载地址
             size_text: 游戏大小描述
             is_h5: 是否是H5游戏
+            image: 游戏资料片
         },
         ...
     ]
@@ -193,6 +194,13 @@
         down_url: 统计下载地址
         size_text: 游戏大小描述
         is_h5: 是否是H5游戏
+        image: 游戏资料片
+        
+        cate_id: 分类ID
+        sort: 排序
+        is_comm: 是否推荐
+        agent_id: 渠道ID
+
     }
 }
 ```
@@ -235,6 +243,7 @@
                     down_url: 统计下载地址
                     size_text: 游戏大小描述
                     is_h5: 是否是H5游戏
+                    image: 游戏资料片
                 }
                 ...
             ]
@@ -278,6 +287,7 @@
             benefits: 是否返利
             benefits_rate: 返利比例
             is_h5: 是否是H5游戏
+            image: 游戏资料片
         },
         ...
     ]
@@ -347,6 +357,7 @@
             benefits: 是否返利
             benefits_rate: 返利比例
             is_h5: 是否是H5游戏
+            image: 游戏资料片
         },
         ...
     ]
@@ -387,6 +398,7 @@
             benefits: 是否返利
             benefits_rate: 返利比例
             is_h5: 是否是H5游戏
+            image: 游戏资料片
         },
         ...
     ]
@@ -422,6 +434,7 @@
             benefits: 是否返利
             benefits_rate: 返利比例
             is_h5: 是否是H5游戏
+            image: 游戏资料片
         },
         ...
     ]
@@ -464,6 +477,7 @@
             benefits: 是否返利
             benefits_rate: 返利比例
             is_h5: 是否是H5游戏
+            image: 游戏资料片
         },
         ...
     ]
@@ -949,6 +963,7 @@
             benefits: 是否返利
             benefits_rate: 返利比例
             is_h5: 是否是H5游戏
+            image: 游戏资料片
         },
         ...
     ]
@@ -1549,6 +1564,7 @@
             benefits: 是否返利
             benefits_rate: 返利比例
             is_h5: 是否是H5游戏
+            image: 游戏资料片
         },
         ...
     ]
