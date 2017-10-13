@@ -192,6 +192,7 @@
         has_gift: 是否有礼包
         down_url: 统计下载地址
         size_text: 游戏大小描述
+        is_h5: 是否是H5游戏
     }
 }
 ```
@@ -233,6 +234,7 @@
                     has_gift: 是否有礼包
                     down_url: 统计下载地址
                     size_text: 游戏大小描述
+                    is_h5: 是否是H5游戏
                 }
                 ...
             ]
@@ -275,6 +277,7 @@
             size_text: 游戏大小描述
             benefits: 是否返利
             benefits_rate: 返利比例
+            is_h5: 是否是H5游戏
         },
         ...
     ]
@@ -343,6 +346,7 @@
             size_text: 游戏大小描述
             benefits: 是否返利
             benefits_rate: 返利比例
+            is_h5: 是否是H5游戏
         },
         ...
     ]
@@ -382,6 +386,7 @@
             size_text: 游戏大小描述
             benefits: 是否返利
             benefits_rate: 返利比例
+            is_h5: 是否是H5游戏
         },
         ...
     ]
@@ -439,6 +444,7 @@
             size_text: 游戏大小描述
             benefits: 是否返利
             benefits_rate: 返利比例
+            is_h5: 是否是H5游戏
         },
         ...
     ]
@@ -923,6 +929,7 @@
             size_text: 大小描述
             benefits: 是否返利
             benefits_rate: 返利比例
+            is_h5: 是否是H5游戏
         },
         ...
     ]
@@ -1522,6 +1529,7 @@
             size_text: 游戏大小描述
             benefits: 是否返利
             benefits_rate: 返利比例
+            is_h5: 是否是H5游戏
         },
         ...
     ]
