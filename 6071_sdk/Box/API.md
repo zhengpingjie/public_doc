@@ -1564,6 +1564,22 @@
             }
             ...
         ]
+        winners:[
+            {
+                user_name: 中奖用户
+                goods_name: 中奖奖品
+                add_time: 中奖时间
+            }
+            ...
+        ]
+        my_goods:[
+            {
+                user_name: 中奖用户
+                goods_name: 中奖奖品
+                add_time: 中奖时间
+            }
+            ..
+        ]
         draw_times: 剩余抽奖次数
     }
 }
