@@ -123,11 +123,12 @@
             version_name: 版本号
             update_time: 更新时间
             download_times: 下载次数
-            url: 绝对下载地址
+            url: 绝对下载地址/H5玩游戏地址
             type: 游戏类别
             has_gift: 是否有礼包
             down_url: 统计下载地址
             size_text: 游戏大小描述
+            is_h5: 是否是H5游戏
         },
         ...
     ]
