@@ -1422,7 +1422,7 @@
 ```
 {
     game_name: 游戏名称
-    time: 时间
+    time: 时间 0:历史开服，1:即将开服
     page: 页码
     limit: 分页数
 }
