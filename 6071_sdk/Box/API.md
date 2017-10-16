@@ -50,7 +50,8 @@
  - [抽奖信息](#luck-draw) 
  - [用户抽奖](#draw) 
  - [可申请返利游戏列表](#bt-repay-apply) 
- - [用户返利申请](#repay-apply) 
+ - [返利申请](#repay-apply) 
+ - [我的返利申请](#my-repay-apply) 
 
 **公共请求参数列表**
 ```
@@ -1708,7 +1709,7 @@
 }
 ```
 
-<h2 id="repay-apply">用户返利申请</h2>
+<h2 id="repay-apply">返利申请</h2>
 
 - 接口名: box/repayApply 
 - 请求参数:  
@@ -1732,6 +1733,41 @@
         good_id: 奖品ID
         good_name: 奖品名称
     }
+}
+```
+
+
+<h2 id="my-repay-apply">我的返利申请</h2>
+
+- 接口名: box/repayApply 
+- 请求参数:  
+```
+{
+    user_id: 用户名
+    page: 页码
+    limit: 每页条数
+}
+```
+- 返回参数:  
+```
+{
+    code: 1,
+    message: 接口信息,
+    data: [
+        {
+            id: 记录
+            user_id: 用户ID
+            game_id: 游戏ID
+            game_name: 游戏名
+            login_name: 游戏账号
+            role: 角色名
+            role_id: 角色ID
+            server: 游戏区服
+            money: 充值金额
+            status: 申请状态 0: 待处理, 1: 已发放, 2: 已拒绝
+            add_time: 申请时间
+        }
+    ]
 }
 ```
 
