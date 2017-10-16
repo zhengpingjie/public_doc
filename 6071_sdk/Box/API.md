@@ -1663,7 +1663,7 @@
 ```
 
 
-<h2 id="benefits-game">可返利游戏</h2>
+<h2 id="bt-repay-apply">可返利游戏</h2>
 
 - 接口名: box/btBenefitsGame 
 - 请求参数:  
