@@ -1729,10 +1729,7 @@
 {
     code: 1,
     message: 接口信息,
-    data: {
-        good_id: 奖品ID
-        good_name: 奖品名称
-    }
+    data: 
 }
 ```
 
