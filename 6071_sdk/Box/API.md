@@ -1752,6 +1752,7 @@
     message: 接口信息,
     data: [
         {
+            
             game_id: 游戏ID
             name: 游戏名称
             ico: 游戏logo
@@ -1772,7 +1773,15 @@
             is_h5: 是否是H5游戏
             image: 游戏资料片
             
+            user_id: 用户ID
+            game_name: 游戏名
+            login_name: 游戏账号
+            role: 角色名
+            role_id: 角色ID
+            server: 游戏区服
+            money: 充值金额
             status: 申请状态 0: 待处理, 1: 已发放, 2: 已拒绝
+            add_time: 申请时间
         }
         ...
     ]
