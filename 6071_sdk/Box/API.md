@@ -49,7 +49,7 @@
  - [返利游戏列表](#benefits-game) 
  - [抽奖信息](#luck-draw) 
  - [用户抽奖](#draw) 
- - [可返利游戏](#bt-repay-apply) 
+ - [可申请返利游戏列表](#bt-repay-apply) 
  - [用户返利申请](#repay-apply) 
 
 **公共请求参数列表**
@@ -1663,7 +1663,7 @@
 ```
 
 
-<h2 id="bt-repay-apply">可返利游戏</h2>
+<h2 id="bt-repay-apply">可申请返利游戏列表</h2>
 
 - 接口名: box/btBenefitsGame 
 - 请求参数:  
