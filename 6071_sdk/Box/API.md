@@ -49,6 +49,7 @@
  - [返利游戏列表](#benefits-game) 
  - [抽奖信息](#luck-draw) 
  - [用户抽奖](#draw) 
+ - [可返利游戏](#bt-repay-apply) 
  - [用户返利申请](#repay-apply) 
 
 **公共请求参数列表**
@@ -1658,6 +1659,52 @@
         good_id: 奖品ID
         good_name: 奖品名称
     }
+}
+```
+
+
+<h2 id="benefits-game">可返利游戏</h2>
+
+- 接口名: box/btBenefitsGame 
+- 请求参数:  
+```
+{
+    user_id: 用户名
+    page: 页码
+    limit: 每页条数
+}
+```
+- 返回参数:  
+```
+{
+    code: 1,
+    message: 接口信息,
+    data: [
+        {
+            game_id: 游戏ID
+            name: 游戏名称
+            ico: 游戏logo
+            size: 游戏大小
+            desp: 描述
+            cate_name: 分类名称
+            package_name: 包名
+            version_name: 版本号
+            update_time: 更新时间
+            download_times: 下载次数
+            url: 绝对下载地址
+            type: 游戏类别
+            has_gift: 是否有礼包
+            down_url: 统计下载地址
+            size_text: 游戏大小描述
+            benefits: 是否返利
+            benefits_rate: 返利比例
+            is_h5: 是否是H5游戏
+            image: 游戏资料片
+            
+            count: 今日充值金额
+        },
+        ...
+    ]
 }
 ```
 
