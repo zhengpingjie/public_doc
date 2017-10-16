@@ -1736,7 +1736,7 @@
 
 <h2 id="my-repay-apply">我的返利申请</h2>
 
-- 接口名: box/repayApply 
+- 接口名: box/myRepayApply 
 - 请求参数:  
 ```
 {
