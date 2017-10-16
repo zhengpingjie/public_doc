@@ -1434,17 +1434,28 @@
     message: 接口信息,
     data: [
         {
-            game_name: 游戏名称
-            ico: 图标
+            benefits: 是否返利
+            benefits_rate: 返利比例
             game_id: 游戏ID
+            name: 游戏名称
+            ico: 游戏logo
+            size: 游戏大小
+            desp: 描述
+            cate_name: 分类名称
+            package_name: 包名
+            version_name: 版本号
+            update_time: 更新时间
+            download_times: 下载次数
+            url: 绝对下载地址
+            type: 游戏类别
+            has_gift: 是否有礼包
+            down_url: 统计下载地址
+            size_text: 游戏大小描述
+            is_h5: 是否是H5游戏
+            image: 游戏资料片
+            
             server: 区服
             open_time: 开服时间
-            file_path: 下载地址
-            type: 游戏类别
-            down_url: 统计下载地址
-            
-            size_text: 游戏大小
-            download_times: 下载次数
         },
         ...
     ]
