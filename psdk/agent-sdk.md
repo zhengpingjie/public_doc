@@ -60,7 +60,7 @@ $sdk->notifySuccess();
 ```
 返回数据格式，按照渠道对接文档定制。
 
-### 通知成功返回信息
+### 渠道订单数据格式化
 ```
 $sdk->formatAgentOrderParams();
 ```
