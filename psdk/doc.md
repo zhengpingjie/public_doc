@@ -68,6 +68,15 @@ ksrot($params);
 $sign = strtolower(md5(http_build_query($params)));
 ```
 
+验证成功返回数据：
+```
+{"status":"success"}
+```
+
+验证失败返回数据：
+```
+{"status":"failed","msg":"--失败原因--"}
+```
 
 
 
