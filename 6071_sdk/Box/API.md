@@ -61,6 +61,7 @@
     encrypt-response: 是否加密
     sys_versoin: 系统版本
     version: 盒子版本
+    box_agent_id: 盒子原始渠道
 }
 ```
 
