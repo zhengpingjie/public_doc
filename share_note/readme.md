@@ -4,17 +4,18 @@
 <h2 id="tag1">十一月分享主题预览·上</h2>
 
 ### PSR
-- [PSR - PHP 标准规范 中文版](https://github.com/summerblue/psr.phphub.org/tree/master/psrs): 重点关注 `PSR-1/PSR-2/PSR-4` 三条
+- [PSR - PHP 标准规范 中文版](https://github.com/summerblue/psr.phphub.org/tree/master/psrs)：重点关注 `PSR-1/PSR-2/PSR-4` 三条
 
 *扩展*
 
 [composer 的使用](http://docs.phpcomposer.com/)
 
 ### 版本管理
-- 版本库是根本: 所有有效的修改必须入库, 对线上的即时性修改，也需要补录提交。
-- 每次提交后工作目录尽量干净: 过多的未提交的修改记录会干扰同步与提交。
-- 版本控制目录，忽略目录与文件: 分清哪些文件是需要进行版本管理的，哪些目录是不需要入库的，避免库中存在无意义文件。
+- 版本库是根本：所有有效的修改必须入库，对线上的即时性修改，也需要补录提交。
+- 每次提交后工作目录尽量干净：过多的未提交的修改记录会干扰同步与提交。
+- 版本控制目录，忽略目录与文件：分清哪些文件是需要进行版本管理的，哪些目录是不需要入库的，避免库中存在无意义文件。
 - 重要的提交记录做好提交日志
+- 提交前需要更新
 
 *扩展*
 - `git` 的使用技巧：使用临时仓库对比文件的差异、使用本地仓库管理不同的备份
@@ -27,9 +28,9 @@
 
 - **线上代码更新时需要避开部分目录更新**
 
-1. `Application/Common/Conf/config.php`: 该文件包含本地数据库连接信息，不能上传到正式环境
-1. `Application/Runtime`: 临时文件目录
-1. `Uploads`: 文件上传目录
+1. `Application/Common/Conf/config.php`：该文件包含本地数据库连接信息，不能上传到正式环境
+1. `Application/Runtime`：临时文件目录
+1. `Uploads`：文件上传目录
 
 *规划项目目录，不同功能的目录处于不同的一级目录。*
 
