@@ -1,5 +1,5 @@
 # Index
-- [十一月分享主题预览·上](https://github.com/slpi1/public_doc/blob/master/share_note#tag1)
+- [十一月分享主题预览·上](#tag1)
 
 <h2 id="tag1">十一月分享主题预览·上</h2>
 
