@@ -80,10 +80,11 @@ $sdk->formatAgentOrderParams();
 ### 聚合平台订单数据格式化
 将聚合平台的订单数据格式化为渠道订单所需格式，方便SDK回调传参，是 `formatAgentOrderParams` 的逆过程。
 ```
-$sdk->formatPlatformOrderParams($order);
+$sdk->formatPlatformOrderParams($order, $key);
 ```
 参数
 - order: 平台订单详情
+- key: 与渠道约定的秘钥
 
 返回数据格式，按照渠道对接文档定制。
 
