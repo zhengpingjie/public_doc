@@ -2,7 +2,7 @@
 
 **该文档是服务端渠道 SDK 的平台内部类的实现规范，依据渠道提供的相关文档实现具体接口。**
 
-渠道SDK入口文件为: `./Api/Server/AgentSdk/{agent_id}/Sdk.class.php`，类名为: `Sdk`；如果通过命名空间的方式，请使用该命名空间: `Api\Server\AgentSdk\{agent_id}\Sdk`。
+渠道SDK入口文件为: `./Api/Server/AgentSdk/Sdk_{agent_id}/Sdk.class.php`，类名为: `Sdk`；如果通过命名空间的方式，请使用该命名空间: `Api\Server\AgentSdk\Sdk_{agent_id}\Sdk`。
 
 渠道SDK文件需要提供以下接口: 
 - `params` 参数获取
