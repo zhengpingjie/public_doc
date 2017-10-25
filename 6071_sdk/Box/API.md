@@ -1627,6 +1627,7 @@
             {
                 id: 中奖纪录ID
                 user_name: 中奖用户
+                goods_id: 中奖奖品ID
                 goods_name: 中奖奖品
                 add_time: 中奖时间
                 type: 精品类型 0:虚拟奖品，1: 实物奖品
@@ -1638,6 +1639,7 @@
             {
                 id: 中奖纪录ID
                 user_name: 中奖用户
+                goods_id: 中奖奖品ID
                 goods_name: 中奖奖品
                 add_time: 中奖时间
                 type: 精品类型 0:虚拟奖品，1: 实物奖品
@@ -1667,6 +1669,7 @@
     data: {
         id: 中奖纪录ID
         user_name: 中奖用户
+        goods_id: 中奖奖品ID
         goods_name: 中奖奖品
         add_time: 中奖时间
         type: 精品类型 0:虚拟奖品，1: 实物奖品
