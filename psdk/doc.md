@@ -32,6 +32,33 @@ $sign = strtolower(md5($user_id . $app_id . $isadult . $timestamp . $key));
 | server   | string     | 游戏区服     |
 | role   | string     | 游戏角色     |
 | ip   | string     | 用户IP     |
+| sign   | string     | 签名     |
+
+- 签名方式
+
+厂商需要将`user_id/app_id/attach/money/server/role/ip/app_key`参数列表按照键值进行字典排序。参数与值用等于号(`=`)链接，参数之间用and符号(`&`)链接，形成如下格式的字符串`user_id=xxx&app_id=xxx&attach=xxx...&app_key=xxx`，对所得的字符串进行MD5加密后，字符串转为小写，最终得到签名`sign`的值。
+去掉`app_key`参数后将`sign`值传入参数，最终形成参数列表
+```
+$params = [
+    'user_id' => ...,
+    'app_id' => ...,
+    'attach' => ...,
+    'money' => ...,
+    'server' => ...,
+    'role' => ...,
+    'ip' => ...,
+    'app_key' => ...,
+];
+ksrot($params);
+$sign = strtolower(md5(http_build_query($params)));
+
+unset($params['app_key']);
+$params['sign'] = $sign;
+
+return $params;
+```
+
+
 
 ## 支付回调
 - 参数列表
@@ -49,7 +76,8 @@ $sign = strtolower(md5($user_id . $app_id . $isadult . $timestamp . $key));
 | add_time   | string     | 聚合平台订单创建时间     |
 | sign   | string     | 签名     |
 
-- 验证方式
+- 签名验证方式
+
 将**不**包括`sign`的所有其他参数、再加上参数`app_key`，值为应用秘钥形成参数列表。对参数列表按照键值进行字典排序。参数与值用等于号(`=`)链接，参数之间用and符号(`&`)链接，形成如下格式的字符串`user_id=xxx&app_id=xxx&order_sn=xxx...&app_key=xxx`，对所得的字符串进行MD5加密后，字符串转为小写，最终得到签名`sign`的值。通过与参数列表中的`sign`值作比较，得出效验结果。
 ```
 $params = [
