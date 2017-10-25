@@ -52,6 +52,7 @@
  - [可申请返利游戏列表](#bt-repay-apply) 
  - [返利申请](#repay-apply) 
  - [我的返利申请](#my-repay-apply) 
+ - [抽奖奖品使用](#convert-game-money)
 
 **公共请求参数列表**
 ```
@@ -1627,6 +1628,8 @@
                 user_name: 中奖用户
                 goods_name: 中奖奖品
                 add_time: 中奖时间
+                type: 精品类型 0:虚拟奖品，1: 实物奖品
+                status: 奖品发放状态 0: 未中奖, 1: 未发放, 2: 已发放
             }
             ...
         ]
@@ -1635,6 +1638,8 @@
                 user_name: 中奖用户
                 goods_name: 中奖奖品
                 add_time: 中奖时间
+                type: 精品类型 0:虚拟奖品，1: 实物奖品
+                status: 奖品发放状态 0: 未中奖, 1: 未发放, 2: 已发放
             }
             ..
         ]
@@ -1789,4 +1794,25 @@
 }
 ```
 
+<h2 id="convert-game-money">抽奖奖品使用</h2>
+
+仅中奖纪录商品 `type == 0  && status == 1` 的记录可以使用。
+
+- 接口名: box/convertGameMoney 
+- 请求参数:  
+```
+{
+    user_id: 用户ID
+    game_id: 游戏ID
+    luck_draw_log: 中奖纪录
+}
+```
+- 返回参数:  
+```
+{
+    code: 1
+    message: 接口信息
+    data: 
+}
+```
 
