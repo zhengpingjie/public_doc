@@ -1625,6 +1625,7 @@
         ]
         winners:[
             {
+                id: 中奖纪录ID
                 user_name: 中奖用户
                 goods_name: 中奖奖品
                 add_time: 中奖时间
@@ -1635,6 +1636,7 @@
         ]
         my_goods:[
             {
+                id: 中奖纪录ID
                 user_name: 中奖用户
                 goods_name: 中奖奖品
                 add_time: 中奖时间
@@ -1804,7 +1806,7 @@
 {
     user_id: 用户ID
     game_id: 游戏ID
-    luck_draw_log: 中奖纪录
+    luck_draw_log: 中奖纪录ID
 }
 ```
 - 返回参数:  
