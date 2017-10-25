@@ -1665,9 +1665,12 @@
     code: 1,
     message: 接口信息,
     data: {
-        good_id: 奖品ID
-        good_name: 奖品名称
-        luck_draw_log: 中奖记录ID
+        id: 中奖纪录ID
+        user_name: 中奖用户
+        goods_name: 中奖奖品
+        add_time: 中奖时间
+        type: 精品类型 0:虚拟奖品，1: 实物奖品
+        status: 奖品发放状态 0: 未中奖, 1: 未发放, 2: 已发放
     }
 }
 ```
