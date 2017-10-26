@@ -58,7 +58,7 @@ class Demo implements \Api\Server\AgentSdk\ISdk
      */
     public function valiNotify($key)
     {
-        $post = I('post.');
+        $post = $this->params();
         $sign = $post['sign'];
 
         unset($post['sign']);
@@ -71,19 +71,43 @@ class Demo implements \Api\Server\AgentSdk\ISdk
         }
         return false;
     }
-
+    
+    /**
+     * 回调验证失败
+     * 
+     * @Author   slpi1
+     * @Email    365625906@gmail.com
+     * @DateTime 2017-10-26T10:04:28+0800
+     * @param    [type]                   $msg [description]
+     * @return   [type]                        [description]
+     */
     public function notifyFailed($msg)
     {
         $failed = array('status' => false, 'msg' => $msg);
         exit(json_encode($failed));
     }
-
+    
+    /**
+     * 回调验证成功
+     * 
+     * @Author   slpi1
+     * @Email    365625906@gmail.com
+     * @DateTime 2017-10-26T10:04:45+0800
+     * @return   [type]                   [description]
+     */
     public function notifySuccess()
     {
         $success = array('status' => true);
         exit(json_encode($success));
     }
 
+    /**
+     * 提取渠道回调信息中的订单信息
+     * @Author   slpi1
+     * @Email    365625906@gmail.com
+     * @DateTime 2017-10-26T10:05:01+0800
+     * @return   [type]                   [description]
+     */
     public function formatAgentOrderParams()
     {
         $post = I('post.');
@@ -99,6 +123,18 @@ class Demo implements \Api\Server\AgentSdk\ISdk
         );
     }
 
+    /**
+     * 将平台订单信息转化为渠道创建订单时所需信息
+     * 
+     *   为提高安全性，可以对信息签名，具体要求，依照渠道提供的对接文档。
+     * 
+     * @Author   slpi1
+     * @Email    365625906@gmail.com
+     * @DateTime 2017-10-26T10:06:22+0800
+     * @param    [type]                   $order [description]
+     * @param    [type]                   $key   [description]
+     * @return   [type]                          [description]
+     */
     public function formatPlatformOrderParams($order, $key)
     {
         $params = array(
