@@ -89,3 +89,6 @@ $sdk->formatPlatformOrderParams($order, $key);
 返回数据格式，按照渠道对接文档定制。
 
 
+## 附
+- [渠道文档 Demo](./agent-sdk-demo)
+- [渠道SDK实现示例](./agent-sdk-demo/demo.php)
