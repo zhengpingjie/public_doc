@@ -1,6 +1,6 @@
 # 聚合SDK相关过程时序图
 
-![时序图](/assets/active.jpg)
+![时序图](./assets/active.jpg)
 
 ## 过程说明
 ### 用户登录
