@@ -16,6 +16,7 @@
 用户登录渠道SDK完成后，调用聚合SDK提供的登录方法 `login`，并返回登录结果。
 
 - 参数列表
+
 | KEY      | TYPE    | COMMENT |
 | -------- | ------- | ------- |
 | user_name | string     | 用户名      |
@@ -38,6 +39,7 @@ strtolower(md5($user_name . $timestamp . $app_key)) == $sign
 用户点击游戏充值按钮，系统生成订单信息。聚合SDK获取到系统订单信息后，调用渠道SDK的订单创建方法 `order`，渠道SDK验证订单合法并创建订单。订单创建成功后，返回渠道订单号并唤起支付流程。
 
 - 参数列表
+
 | KEY      | TYPE    | COMMENT |
 | -------- | ------- | ------- |
 | user_name | string     | 渠道用户名      |
@@ -88,6 +90,7 @@ POST
 ```
 
 - 参数列表
+
 | KEY      | TYPE    | COMMENT |
 | -------- | ------- | ------- |
 | user_name | string     | 渠道用户名      |
