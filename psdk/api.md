@@ -83,6 +83,26 @@
     data:
 }
 ```
+- 签名方式
+
+将 `order_sn/agent_order_status/agent_order_sn/timestamp/sign_key` 参数列表按键值进行字典排序。参数与值用等于号(`=`)链接，参数之间用and符号(`&`)链接，形成如下格式的字符串`order_sn=xxx&agent_order_status=xxx&agent_order_sn=xxx...&sign_key=xxx`，对所得的字符串进行MD5加密后，字符串转为小写，最终得到签名`sign`的值。去掉`app_key`参数后将`sign`值传入参数，最终形成参数列表。
+```
+$params = array(
+    'order_sn' => ...,
+    'agent_order_status' => ...,
+    'agent_order_sn' => ...,
+    'timestamp' => ...,
+    
+    'sign_key' = $key
+);
+
+ksort($params);
+
+$sign = strtolower(md5(http_build_query($params)));
+$param['sign'] = $sign;
+unset($params['sign']);
+return $params;
+```
 
 
 ## 支付成功回调接口
