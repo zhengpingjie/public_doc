@@ -90,5 +90,4 @@ $sdk->formatPlatformOrderParams($order, $key);
 
 
 ## 附
-- [渠道文档 Demo](./agent-sdk-demo)
 - [渠道SDK实现示例](./demo.php)

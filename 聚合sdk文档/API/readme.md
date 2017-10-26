@@ -125,6 +125,3 @@ return $params;
 ```
 以渠道提供的文档为准
 ```
-
-# 附
-- [渠道SDK规范](https://github.com/slpi1/public_doc/blob/master/psdk/agent-sdk.md)
